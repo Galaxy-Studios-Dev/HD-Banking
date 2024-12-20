@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html style="color: rgb(225, 220, 220); background-color: purple; overflow-x: hidden; overflow-y: scroll;">
+    <head>
+        <title>Horizons Dawn Bank</title>
+        <link rel="icon" href="hd.ico">
+
+        <style>
+            a {
+                color:rgb(225, 220, 220);
+                text-decoration: none;
+            }
+            a:hover {
+                color:#ba9256;
+            }
+
+            body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+
+            .container {
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                height: 400px;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 300px;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                width: 300px;
+                padding: 10px;
+                background-color: #5cb85c;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #4cae4c;
+            }
+
+            #message {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .error {
+                color: red;
+                font-size: 0.9em;
+            }
+
+            .password-hint {
+                font-size: 0.9em;
+                color: #666;
+                margin-top: 5px;
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="header.jpg" style="position: absolute; left: 0px; top: 0px; width: 1340px;">
+
+        <span style="position:absolute; background-color:#ba9256; top: 220px; width: 200px; height: 200px; left: 10px;"></span>
+            <span style="position: absolute; background-color: purple; top: 225px; left: 15px; width: 190px; height: 190px;"></span>
+            <ul>
+                <span style="position:absolute; top: 170px; left: 35px; width: 150px;">
+                    <a style="position:absolute; top: 65px; left: 52px;" href="index.html">Home</a><br>
+                    <a style="position:absolute; top: 90px; left: 42px;" href="aboutus.html">About Us</a><br>
+                    <a style="position:absolute; top: 115px; left: 48px;" href="policies.html">Policies</a><br>
+                    <a style="position:absolute; top:140px; left: 30px;" href="signup.html">Apply Today!</a><br>
+                    <a style="position:absolute; top: 163px; left: 55px;" href="login.html">Login</a><br>
+                </span>
+            </ul>
+        </span>
+
+        <span class="container" style="position:absolute; top: 220px; width: 700px; left: 360px;">
+            <h2>Bank Application</h2>
+            
+            <form id="signupForm">
+                <span style="position: absolute; top: 87px; left: 216px;">
+                    <div class="form-group">
+                        <label for="leader">Leader / Alliance / Nation Name</label>
+                        <input type="text" id="leader" name="leader" required>
+                    </div>
+    
+                    <span class="form-group" style="position: absolute; top: 117px; ">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="password-hint" id="passwordHint">
+                            Password must be at least 8 characters long, and include at
+                            least one uppercase letter, one lowercase letter, one
+                            number, and one special character.
+                        </div>
+                        <span id="passwordError" class="error"></span>
+                    </span>
+                </span>
+
+                <span style="position: absolute; top: 340px; left: 310px; width: 150px; ">
+                    <label for="remember" style="position: absolute; top: 0px; "> Remember me</label>
+                    <input type="checkbox" style="position: absolute; top: 0px; left: -35px;" id="remember" name="remember" value="">
+                </span>
+                
+                <button type="submit" style="position: absolute; top: 377px; left: 225px;">Signup</button>
+            </form>
+            <p id="message"></p>
+        </span>
+
+        <img src="longadv1.png" style="position:absolute; top: 430px; left: 10px; width:200px; height: 480px;">
+        <img src="longadh1.png" style="position:absolute; top: 760px; left: 220px; width:1090px; height: 150px;">
+
+        <p style="position:absolute; top: 900px; left: 570px;">™ Horizons Dawn Banking LLC.</p>
+    </body>
+</html>
